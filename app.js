@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-
+const morgan = require('morgan');
 //listen to request in this port
 app.listen(3000);
 
@@ -12,6 +12,8 @@ const blogs = [
   { title: 'Vavaz', snippet: 'piu piu piu' },
   { title: 'The Office', snippet: 'kkkkkkkkkkkkkkkkkkk' },
 ];
+
+app.use(morgan('dev'));
 
 app.get('/', (req, res) => {
   res.render('index', { title: 'Home', blogs });

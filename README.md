@@ -10,6 +10,14 @@ This project is dedicated to remember and relearn some Node.js concepts from the
 
 # Create an Express app / website
 
+Middleware, is any code which runs in the server that recieves a resquest and send a response.
+
+Examples:
+  
+  Logger middleware to log details of every request.
+  Authentication check middleware for protected routes.
+  Middleware to parse JSON data from requests
+  Return 404 pages.
 
 # Use MongoDB
 
